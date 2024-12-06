@@ -35,3 +35,14 @@ nav {
   color: rgb(0, 255, 255, 0.5);
   font-size: 100px;
 }
+.contents {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  background-color: #e5e5ff;
+  column-gap: 16px;
+  row-gap: 16px;
+  height: 200px;
+}
+.item {
+  background-color: blue;
+}

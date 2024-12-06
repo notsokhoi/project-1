@@ -1,11 +1,9 @@
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 800
-
 body {
   margin: 0;
   box-sizing: border-box;
   background-color: #71839b;
 }
+
 section {
   display: flex;
 }
@@ -36,12 +34,18 @@ nav {
   font-style: normal;
 }
 
+.nav-link:hover {
+  color: #333c46;
+  cursor: crosshair;
+}
+
 .hero {
   justify-content: center;
   height: 30vh;
   align-items: center;
-  background-image: url('https://i.redd.it/ghwxobltryy81.jpg');
+  background-image: url('https://www.diyphotography.net/wp-content/uploads/2017/07/BTTF1.2.jpg');
   background-size: cover;
+  background-position: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 80px;
   font-family: 'Parkinsans', serif;
@@ -61,4 +65,9 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.item:hover {
+  opacity: 50%;
+  cursor: crosshair;
 }

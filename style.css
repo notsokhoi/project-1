@@ -2,7 +2,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #71839b;
-  /* background-image: url("https://i.redd.it/ghwxobltryy81.jpg"); */
 }
 section {
   display: flex;
@@ -16,6 +15,7 @@ nav {
   padding: 0 24px;
   background-color: #596979;
 }
+/* for navigation */
 .logo {
   font-size: 18px;
   font-weight: bold;
@@ -28,4 +28,10 @@ nav {
 
 .hero {
   justify-content: center;
+  height: 30vh;
+  align-items: center;
+  background-image: url('https://i.redd.it/ghwxobltryy81.jpg');
+  background-size: cover;
+  color: rgb(0, 255, 255, 0.5);
+  font-size: 100px;
 }

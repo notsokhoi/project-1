@@ -1,3 +1,6 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -18,12 +21,19 @@ nav {
 /* for navigation */
 .logo {
   font-size: 18px;
-  font-weight: bold;
+  font-family: 'Parkinsans', serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 .nav-link {
   color: #ffffff;
   padding: 0 16px;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: 'Parkinsans', serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .hero {
@@ -32,8 +42,12 @@ nav {
   align-items: center;
   background-image: url('https://i.redd.it/ghwxobltryy81.jpg');
   background-size: cover;
-  color: rgb(0, 255, 255, 0.5);
-  font-size: 100px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 80px;
+  font-family: 'Parkinsans', serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 .contents {
   margin: 16px;

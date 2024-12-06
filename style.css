@@ -2,4 +2,30 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #71839b;
+  /* background-image: url("https://i.redd.it/ghwxobltryy81.jpg"); */
+}
+section {
+  display: flex;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 24px;
+  background-color: #596979;
+}
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav-link {
+  color: #ffffff;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.hero {
+  justify-content: center;
 }

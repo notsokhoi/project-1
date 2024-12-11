@@ -2,6 +2,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #71839b;
+  font-family: 'Parkinsans', serif;
 }
 
 section {
@@ -19,8 +20,6 @@ nav {
 /* for navigation */
 .logo {
   font-size: 18px;
-  font-family: 'Parkinsans', serif;
-  font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
 }
@@ -41,12 +40,12 @@ nav {
 }
 
 .hero {
-  justify-content: center;
   height: 30vh;
-  align-items: center;
+  /* image properties */
   background-image: url('https://www.diyphotography.net/wp-content/uploads/2017/07/BTTF1.2.jpg');
   background-size: cover;
   background-position: center;
+  /* text properties */
   color: rgba(255, 255, 255, 0.5);
   font-size: 80px;
   font-family: 'Parkinsans', serif;
@@ -55,6 +54,8 @@ nav {
   font-style: normal;
   text-align: center;
   line-height: 0.75;
+  justify-content: center;
+  align-items: center;
 }
 .contents {
   margin: 16px;
@@ -63,6 +64,8 @@ nav {
   gap: 16px;
 }
 .item {
+  grid-column: 1;
+  grid-row: 1/4;
   opacity: 50%;
   filter: saturate(0.5);
   border-radius: 8px;
@@ -72,7 +75,6 @@ nav {
   object-fit: cover;
   transition: all 0.1s ease;
 }
-
 .item:hover {
   opacity: 100%;
   cursor: crosshair;
@@ -80,3 +82,31 @@ nav {
   filter: saturate(1) drop-shadow(0 16px 20px #000000);
   transform: scale(1.05);
 }
+.grid-item {
+  /* position: relative; */
+  display: grid;
+}
+
+.item-text {
+  /* position: relative; */
+  /* bottom: 50%; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  opacity: 100%;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 3;
+  padding: 24px;
+  margin: 8px;
+  font-size: 24px;
+  font-weight: 4 00;
+  color: white;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+/* .item-text:hover {
+  opacity: 10%;
+  transition: all 0.25s ease-out; 
+} */

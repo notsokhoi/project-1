@@ -84,7 +84,15 @@ nav {
 }
 .grid-item {
   /* position: relative; */
+  /* changed the item layout to grid so that i can better position the text element below */
   display: grid;
+}
+
+/* item-text hover properties */
+.grid-item:hover .item-text {
+  opacity: 0%;
+  transition: all 0.1s ease;
+  transform: scale(1.05);
 }
 
 .item-text {
@@ -101,12 +109,16 @@ nav {
   font-size: 24px;
   font-weight: 4 00;
   color: white;
-  z-index: 1;
+  z-index: 0;
   background-color: rgb(0, 0, 0, 0.5);
   border-radius: 8px;
+  transition: all 0.3s 0.1s ease;
+  /* for removing hover interaction from item-text */
+  pointer-events: none;
 }
 
-/* .item-text:hover {
+/* //removed this because it wasn't hovering with image hover//
+.item-text:hover {
   opacity: 10%;
   transition: all 0.25s ease-out; 
 } */
